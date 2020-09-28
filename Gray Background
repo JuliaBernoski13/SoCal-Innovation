@@ -1,0 +1,24 @@
+CSS
+
+.bg-gray {
+    padding: 20px;
+    background: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.bg-gray h3 {
+    margin-top: 0;
+}
+
+.gray-wrapper {
+    background: #f9f9f9;
+}
+
+.row-wide>.col-md-12[class*="section"] {
+    padding: 0;
+}
+
+HTML
+
+1. For any content item that needs a gray background add in 'bg-gray' within the CSS Wrapper Class Name Field
+2. If multiple items within one row need seperate gray backgrounds, add in 'row-wide' along with 'bg-gray'
