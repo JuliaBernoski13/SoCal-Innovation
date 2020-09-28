@@ -56,6 +56,12 @@ CSS
     margin-bottom: 40px;
 }
 
+.body-large p {
+    font-size: 20px;
+    line-height: 26px;
+    color: #332e20;
+}
+
 HTML
 
 1. Add in a new HTML content item
