@@ -1,0 +1,71 @@
+CSS
+
+.program-tile a:hover,
+.program-tile a:focus,
+.alliance-program-tile a:hover,
+.alliance-program-tile a:focus,
+.board-tile:hover,
+.board-tile:focus,
+.corporate-tile:hover,
+.corporate-tile:focus,
+.event-tile a:hover,
+.event-tile a:focus,
+.event-calendar li:hover,
+.event-calendar li:focus {
+    background: #fff;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.02), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.event-tiles,
+.board-tiles,
+.corporate-tiles,
+.supporting-partner-tiles,
+.strategic-partner-tiles,
+.ecosystem-partner-tiles {
+    display: flex;
+    margin: 25px -15px 45px -15px;
+    flex-wrap: wrap;
+}
+
+.event-tile,
+.board-tile,
+.corporate-tile,
+.partner-tile,
+.supporting-partner-tile,
+.strategic-partner-tile,
+.ecosystem-partner-tile {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 33%;
+    display: flex;
+}
+
+.board-tile,
+.corporate-tile,
+.supporting-partner-tile,
+.strategic-partner-tile,
+.ecosystem-partner-tile {
+    border: 1px solid #f0f0f0;
+    max-width: 360px;
+    margin: 20px 20px;
+    transition: .3s;
+}
+
+.board-tile>.HtmlContent,
+.corporate-tile>.HtmlContent {
+    width: 100%;
+}
+
+.corporate-tile img {
+    height: 100%;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+HTML
+
+1. Add in a new HTML Content Item
+2. Within the new content item add in an Image
+3. Wrap the image in a link tag and link to wherever you'd like
+4. Within the CSS Wrapper Class Name Field add in 'corporate-tile'
