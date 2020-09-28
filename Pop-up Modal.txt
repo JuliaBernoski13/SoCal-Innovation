@@ -1,0 +1,21 @@
+ CSS
+ 
+ .pop {
+        padding-right: 30px;
+    }
+    
+.pop h3 {
+    padding-top: 10px;
+}
+
+.pop p {
+    color: #ff7546;
+}
+
+HTML
+
+1. Create a two New HTML Content Items (top and a bottom)
+2. Within the top content item add in an image wrapped in a <div> tag, <h3> tag wrapped in a strong tag, <h4> tag wrapped in a strong tag and paragraph text,
+3. Within the top elements CSS Wrapper Class Name Field add in 'pop pop[number]' eg. pop pop1
+4. Within the bottom content item add in an image wrapped in a <div> tag, <h3> tag wrapped in a strong tag, and any paragraph text.
+5. Within the botton content items CSS Wrapper Class Name Field add in 'pop-up pop[number]' eg. pop-up pop1.
