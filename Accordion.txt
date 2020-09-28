@@ -1,0 +1,79 @@
+JS
+$(function() {
+$(".accordion-heading").each(function() {
+	$(this).next(".accordion-text").andSelf().wrapAll("<div class='accordion-wrap' />");
+});
+
+$('.accordion-heading').on('click', function() {
+	var items = [];
+	$('.accordion-wrap').each(function (i, item) {
+		items.push(item);
+	});
+	$parent_box = $(this).closest('.accordion-wrap');
+	$parent_box.siblings().find('.accordion-text').slideUp();
+	$parent_box.find('.accordion-text').slideToggle(600, 'swing');
+	$parent_box.toggleClass('open');
+	var selected = $(items).index($parent_box);
+	for (var j = 0; j < items.length; j++) {
+		if (j !== selected) {
+			$(items[j]).removeClass('open');
+		}
+	}
+});
+});
+
+CSS
+
+.accordion-heading h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ff7546;
+    /* link colour */
+    background: #fff;
+    padding: 15px 10px;
+    margin: 0;
+    border-top: 1px solid #f4f4f4;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.accordion-heading h3:hover,
+.accordion-heading h3:focus {
+    color: #113bea;
+    /* link hover colour */
+    transition: .3s;
+}
+
+.accordion-heading h3::before {
+    font-family: SOCAL;
+    /* change to appropriate kit/unicode */
+    content: '\f01b';
+    margin-right: 10px;
+}
+
+.open .accordion-heading h3::before {
+    font-family: SOCAL;
+    /* change to appropriate kit/unicode */
+    content: '\f01e';
+}
+
+.accordion-text {
+    display: none;
+}
+
+.accordion-wrap .ContentItemHtml,
+.accordion-wrap .ContentItemHtml:hover {
+    transition: none !important;
+}
+
+.accordion-wrap {
+    margin-bottom: 15px;
+}
+
+HTML
+
+1. Add in two new HTML Content Items (top and bottom)
+2. Within the top HTML Content Item add in an image and a H3 Title
+3. For the top HTML Content Item, within the CSS Wrapper Class Name Field add in 'accordion-heading'
+4. Within the bottom Content Item add in anything you'd like such as paragraph text
+5. For the bottom HTML Content Item, within the CSS Wrapper Class Name Field add in 'accordion-text container'
