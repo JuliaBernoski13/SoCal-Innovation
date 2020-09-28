@@ -1,0 +1,63 @@
+CSS
+
+.program-tile a,
+.alliance-program-tile a,
+.event-tile a {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    color: #54565a;
+    text-decoration: none;
+    text-align: center;
+}
+
+.alliance-program-tile a {
+    margin: 0 0 30px 0;
+    text-align: left;
+    flex-direction: row;
+    min-height: 300px;
+}
+
+.alliance-program-tile .img-container {
+    flex-basis: 25%;
+}
+
+.alliance-program-tile .HtmlContent {
+    flex-basis: 75%;
+    padding: 40px;
+}
+
+.program-tile a:hover,
+.program-tile a:focus,
+.alliance-program-tile a:hover,
+.alliance-program-tile a:focus,
+.board-tile:hover,
+.board-tile:focus,
+.corporate-tile:hover,
+.corporate-tile:focus,
+.event-tile a:hover,
+.event-tile a:focus,
+.event-calendar li:hover,
+.event-calendar li:focus {
+    background: #fff;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.02), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.alliance-program-tile em span {
+    margin-top: 20px;
+}
+
+.alliance-programs-title h1 {
+    margin-bottom: 40px;
+}
+
+HTML
+
+1. Add in a new HTML content item
+2. Within the HTML item add in an image, H2 Title, Paragraph text and a button
+3. Within the CSS Wrapper Class Name Field add in 'alliance-program-tile body-large'
