@@ -62,6 +62,44 @@ CSS
     color: #332e20;
 }
 
+.make-buttons em a,
+.program-tile em span,
+.event-tile em span,
+.alliance-program-tile em span,
+.explore-communities button,
+.HLLandingControl div[id*="More"] a,
+.HLLandingControl div[id*="BottomLink"] a,
+.hero button,
+.summary-edit em a {
+    display: inline-block;
+    color: #332e20;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 14px 20px;
+    background: #edf1f4;
+    border: none;
+    border-radius: 0;
+}
+
+.make-buttons em a:hover,
+.make-buttons em a:focus,
+.program-tile a:hover em span,
+.program-tile a:focus em span,
+.event-tile a:hover em span,
+.event-tile a:focus em span,
+.alliance-program-tile a:hover em span,
+.explore-communities button:hover,
+.explore-communities button:focus,
+.hero button:hover,
+.hero button:focus,
+.summary-edit em a:hover,
+.summary-edit em a:focus {
+    color: #113bea;
+}
+
 HTML
 
 1. Add in a new HTML content item
